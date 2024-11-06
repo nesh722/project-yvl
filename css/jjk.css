@@ -1,0 +1,630 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items:center;
+    background-color: black;
+    color:goldenrod;
+    padding: 15px;
+    
+}
+
+    
+
+ .logo h1 {
+    display: flex;
+    align-items: center;
+}
+.school-logo{
+    width: 70px; 
+    height: max-content;
+    margin-right: 15px; 
+    border-radius: 7PX;
+
+}
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.logo h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color:green;
+}
+
+header nav ul {
+    list-style:none;
+    padding: 0;
+    display: flex; 
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: underline;
+}
+nav ul li a:hover {
+    background-color: whitesmoke;
+    color: blue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.image-slider {
+    position: relative;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: none; /* Hide all images initially */
+}
+
+.slide.active {
+    display: block; /* Show active image */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+
+
+/*.hero{
+    background-image: url(home.jpeg);
+    background-size: cover 50% width="50px";
+    padding: 300px;
+    text-align: center;
+    color: beige;
+    position: relative;
+}
+    
+
+/*.hero {
+    background-image: url(home.jpeg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 400px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    color: white; Text color 
+}*/
+
+
+.hero h2 {
+    font-size: 2.5em;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+
+.hero {
+    background-image: url(home.jpeg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 400px; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;}
+
+.hero p {
+    font-size: 2.1em;
+    
+}
+ section.latest {
+        padding: 20px;
+        background-color: goldenrod;
+        column-count: 2; 
+        column-gap: 30px;
+    }
+    
+ section.latest h2 {
+        column-span: all; 
+    }
+    
+ .latest-item {
+        break-inside: avoid; 
+        margin-bottom: 15px;
+    }
+    .list{
+        list-style: disc;
+    }
+
+
+
+
+#aboutSection {
+    padding: 40px;
+  background-color: rgb(36, 35, 35);
+    display: flex;
+    
+    
+   
+   
+}
+#sectionImg{
+    width: 500px;
+}
+.about h2 {
+    color: whitesmoke;
+    display: block;
+    font-size: xx-large;
+    font-style: italic;
+    position: relative;
+    text-decoration: underline;
+    text-align: top right;
+
+}
+.about h3 {
+    text-decoration: dashed;
+    text-align: left;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+.about p {
+    color:  gainsboro;
+    font-size:x-large;
+    text-align: left;
+
+}
+.about{
+    color: red;
+}
+
+
+.faculty-member {
+    text-align: center;
+    padding: 20px;
+    border: 10px solid gray;
+    border-radius: 8px;
+    background-color: green;
+    transition: transform 0.3s;
+    
+
+}
+.faculty-member :hover{
+    background-color: #68aa4e;
+}
+
+.faculty-member img {
+    max-width: 150px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.faculty h2 {
+    color: #333;
+    text-decoration: underline;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+
+/*section.faculty {
+    padding: 20px;
+    background-image: url(Photo\ by\ Ashim\ D’Silva\ on\ Unsplash.jfif);
+  background-size: cover;
+
+ /* transition: transform 0.3s;  
+  trans
+  
+}
+.faculty h2{
+    text-align: center;
+    color: crimson;
+    font-style: oblique;
+    font-size: xx-large;
+    
+   
+}
+
+.faculty-member {
+    
+   display: inline-block ;
+    width: 20%;
+    height:20% ;
+    margin: 30px;
+    background: rgb(41, 110, 84);
+    padding: 30px;
+border-radius: 10%; 
+transition: transform 0.3s;
+
+
+}
+.faculty-member:hover{
+    background-color:rgb(0, 255, 166) ;
+  
+
+}
+.faculty-member img{
+    width:60px; 
+    height: 60px;
+    border-radius:50%;
+    position: absolute;
+    margin-top:none ;
+    margin-left: 15%;*/
+   
+
+
+  /* .profile picture{
+    position: absolute;
+    top: 10px;     
+    right: 10px;  
+    width: 80px;   
+    height: 80px;  
+    border-radius: 50%;  
+   }*/
+section.xxx{
+    background-color: #48ff00;
+}
+section.programs {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 90px;
+    background-color: #48ff00;
+}
+
+.programs h3 {
+    grid-column: span 2; 
+}
+
+.programs ul {
+    padding: 0;
+    list-style: none;
+}
+
+.programs ul li {
+    background: #312525;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+section.news {
+    padding: 20px;
+    background-color: rgb(209, 206, 0);
+    column-count: 2; 
+    column-gap: 30px;
+}
+
+section.news h2 {
+    column-span: all; 
+}
+
+.news-item {
+    break-inside: avoid; 
+    margin-bottom: 15px;
+}
+
+
+
+section.resources {
+    background-image: url(Photo\ by\ Ashim\ D’Silva\ on\ Unsplash.jfif);
+    color: blueviolet;
+    padding: 150px;
+}
+.box {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding:30px;
+    border-radius: 8px;
+}
+
+.resources {
+    color: green;
+    display: flexbox;
+    padding-top: 15px;
+}
+#search-container {
+    position: absolute;
+    top: 250px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 50%; 
+}
+
+#search-container form {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    position: relative;
+}
+
+.portal {
+    text-align: right;    
+
+}
+
+footer {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    clear: both; 
+}
+
+footer p {
+    float: left;
+    width: 50%;
+}
+
+footer .social-links {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.social-links{
+    color: rgb(67, 13, 168);
+}
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 30px;     
+    height: 30px;     
+    margin: 0 10px;   
+    transition: transform 0.3s;
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    transform: scale(1.7); 
+}
+
+
+.contact-form {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;background-image: url(7b368306-7829-497d-a4a3-bc5162c6e285.jfif);
+
+}
+
+.contact-form input,
+
+
+.contact-form textarea {
+
+    text-align: left;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #887d7d;
+}
+
+.contact-form button {
+    background-color: #68aa4e;
+    color: rgb(31, 6, 6);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    
+} 
+.contact-form button:hover{
+    background-color: #48ff00;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+    }
+
+    section.programs {
+        grid-template-columns: 1fr; }
+     } 
+     footer p,
+     footer .social-links{
+        float: none;
+        width:100% ;
+        text-align: center;
+     }
+     section.blog-section{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+       
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        
+    }
+    
+    .blog-section {
+        padding: 80px;
+        background-color: rgb(226, 109, 109)
+    }
+    
+    .blog-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .blog-card {
+
+        background-color: rgb(35, 80, 35);
+        border-radius: 10px;
+        box-shadow: 10px 8px 8px rgb(26, 25, 25);
+        margin: 60px;
+        max-width: 300px;
+        overflow: hidden;
+        transition: transform 0.3s ;
+    }
+    
+    .blog-card:hover {
+        transform: scale(1.06);
+    }
+    
+    .blog-card img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    
+    .blog-content {
+        padding: 10px;
+    }
+    
+    .blog-content h2 {
+        font-size: 1.5rem;
+        color: green;
+        margin-bottom: 20px;
+    }
+    
+    .blog-content p {
+        color: #000000;
+    }
+    
+    .blog-date {
+        font-size: 1.4rem;
+        
+        margin-bottom: 10px;
+    }
+    
+    .read-more-btn {
+        display: inline-block;
+        margin-top: 15px;
+        
+        background-color:rgb(66, 122, 226);
+        color: white;
+        padding: 10px 20px;
+        text-decoration: underline;
+        border-radius: 18px;
+        transition: background-color 0.2s ease;
+    }
+    
+    .read-more-btn:hover {
+        background-color: #00bbff;
+    }
+    
+
+    .comment-section {
+        padding: 40px 20px;
+        background-color:white;
+        background-image: url(7b368306-7829-497d-a4a3-bc5162c6e285.jfif);
+    }
+    
+    .comment-section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: gold;
+    }
+    
+    .comment-section form {
+
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .comment-section input,
+    .comment-section textarea {
+        margin-bottom: 15px;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    
+    .comment-section textarea {
+        height: 100px;
+        resize: none;
+    }
+    
+    .comment-section button {
+        padding: 7px 10px;
+        background-color: rgb(38, 165, 38);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9rem;
+
+    }
+    
+    .comment-section button:hover {
+       background-color: rgb(11, 92, 11);
+    }
+    
+   
+    @media screen and (max-width: 768px) {
+        .blog-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .blog-card {
+            max-width: 100%;
+        }
+    }
