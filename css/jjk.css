@@ -156,7 +156,7 @@ button.next {
 }
  section.latest {
         padding: 20px;
-        background-color: goldenrod;
+        background-color: rgb(161, 127, 40);
         column-count: 2; 
         column-gap: 30px;
     }
@@ -222,7 +222,7 @@ button.next {
     padding: 20px;
     border: 10px solid gray;
     border-radius: 8px;
-    background-color: green;
+    background-color: goldenrod;
     transition: transform 0.3s;
     
 
