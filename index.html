@@ -33,6 +33,13 @@
             </ul>
         </nav>
     </header>
+    <section class="image-slider"></section>
+        <div class="slides">
+            <img src="Photo by Ashim D’Silva on Unsplash.jfif" alt="Description of Image 1" class="slide active">
+            <img src="English language & literature_.jpeg" alt="Description of Image 2" class="slide">
+            <img src="Photo by Ashim D’Silva on Unsplash.jfif" alt="Description of Image 3" class="slide">
+        </div>
+    </section>
 
     
     <section class="hero">
@@ -78,6 +85,25 @@
         </div>
            
     </footer>
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].classList.add("active");
+            setTimeout(showSlides, 3000); 
+        }
+
+        showSlides(); 
+    </script>
 </body>
 </html>
 
